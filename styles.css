@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(42, 150, 189);
+}
+
+.facebook-box {
+    width: 200px;
+    padding: 15px;
+    background-color: #3b5998; /* Official Facebook blue */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    /* Optional: Add hover effect for better user experience */
+    transition: opacity 0.3s; 
+  }
+
+  .facebook-box:hover {
+    opacity: 0.8;
+  }
+
+  /* Make the link fill the box and remove default link styling */
+  .facebook-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
