@@ -19,12 +19,22 @@ body {
     opacity: 0.8;
   }
 
-  /* Make the link fill the box and remove default link styling */
-  .facebook-box a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Make the link fill the box and remove default link styling */
+.facebook-box a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
   width: 100%;
   height: 100%;
+}
+
+.padded-button {
+  padding: 15px 32px; /* Top/Bottom padding 15px, Left/Right padding 32px */
+  font-size: 16px; /* Controls the base size of the button */
+  /* Other styles */
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
