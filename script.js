@@ -1,12 +1,16 @@
-// let userName = prompt("Enter your name:");
-// alert("Hello, " + userName + "!");
 
-// const inputField = document.getElementById("userInput");
-// const submitButton = document.getElementById("submitBtn");
-// const outputDiv = document.getElementById("output");
+const display = document.getElementById("display");
 
-
-// submitButton.addEventListener("click", function() {
-//     const userInput = inputField.value;
-//     outputDiv.innerText = "You entered: " + userInput;
-// });
+function appendToDisplay(input) {
+    display.value += input;
+}
+function clearDisplay() {
+    display.value = '';
+}
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch (e) {
+        display.value = 'Error';
+    }
+}
