@@ -1,45 +1,48 @@
-body {
-  background-color: rgb(182, 192, 187);
+body{
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
 }
 
-tr:nth-child(even) {
-  background-color: rgba(93, 92, 107, 0.4);
+#calculator{
+  font-family :Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
 }
-
-th:nth-child(even),td:nth-child(even) {
-  background-color: rgba(91, 93, 88, 0.4);
-}
-
-table {
-  width: 60%; /* Set a fixed or percentage width */
-  margin: 0 auto; /* Centers the table horizontally */
-  margin-left: 50%; /* Pushes the table to the left center */
-  display: block;
-  text-align: center;
-}
-
-.Country {
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
   text-align: left;
-  padding-left: 10px;
-  margin: 10px;
+  border:none;
+  background-color: hsl(0, 0%, 20%);
+}
+#key{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding:25px;
+}
+button{
+  width:100px;
+  height:100px;
+  border-radius:50px;
+  border: none;
+  background-color:hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
+button:hover{
+  background-color: hsl(0, 0%, 40%);
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; /* Optional: set a width smaller than the container for the margin auto to work */
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; /* Optional: set a width smaller than the container for the margin auto to work */
+button:active{
+  background-color: hsl(0, 0%, 50%);
 }
